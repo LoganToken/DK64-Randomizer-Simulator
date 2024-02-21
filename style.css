@@ -1,0 +1,20 @@
+.check {
+    color: blueviolet;
+    border: solid;
+}
+
+.check-name {
+    display: inline-block;
+    padding: 12px;
+}
+
+.check-contents {
+    display: inline-block;
+    padding: 12px;
+    color: black;
+    background: black;
+}
+
+.revealed {
+    background: white;
+}
