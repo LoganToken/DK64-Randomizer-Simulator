@@ -18,6 +18,15 @@ simulateButtonElement.addEventListener('click', function() {
 function displaySimulation() {
     simulationElement.innerHTML = '';
 
+    // Starting Kongs
+    simulationElement.appendChild(createTitleElement("Starting Kongs"));
+    //i dont remember javascript
+    for (let kongIndex in spoilerLog['Kongs']["Starting Kong List"]){
+        const kong = spoilerLog['Kongs']["Starting Kong List"][kongIndex];
+        const kongElement = createCheckElement(kong, kong);
+        simulationElement.appendChild(kongElement);
+    }
+
     // Level Order
     simulationElement.appendChild(createTitleElement("Level Order"));
     for (let levelEntrance in spoilerLog['Shuffled Level Order']){
